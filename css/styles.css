@@ -1,0 +1,82 @@
+* {
+    background-color: aqua;
+    color: blue;
+}
+
+
+h3 {
+    color: red;
+    font-size: 30px;
+}
+
+.grupo1 {
+    color: pink;
+}
+
+.grupo2 {
+    font-size: 10px;
+}
+
+#SubtituloUnico {
+    color: green;
+    font-size: 20px;
+}
+
+input[type] {
+    border-color: orange;
+}
+
+input[type="date"] {
+    width: 200px;
+}
+
+[class*="b"] {
+    height: 70px;
+}
+
+#section1 p {
+    color: brown;
+}
+
+#section5>p {
+    color: yellow;
+}
+
+
+#section5+p {
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+section ~ p {
+    color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#section1{
+    background-color: brown;
+}
+
+#cuadrado {
+    height: 20px;
+    background-color: orange;
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 60px;
+
+}
+
+#contenido {
+    background-color: red;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#item {
+    background-color: yellow;
+}

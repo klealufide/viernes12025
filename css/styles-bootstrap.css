@@ -1,0 +1,26 @@
+.form-control {
+    border-color: orange;
+    color: blue;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: pink;
+}
+
+.accordion {
+    --bs-accordion-bg: #3F51B5;
+}
+
+.row {
+    background-color: red;
+}
+
+.col {
+    background-color: yellow;
+}
+
+
+.col-12, .col-10, .col-6, .col-8 {
+    background-color: yellow;
+}
+
