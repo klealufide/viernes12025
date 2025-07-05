@@ -218,12 +218,21 @@
 
     */
 
-    $archivo = fopen("archivo.txt","r");
-    while(!feof($archivo)){
-        echo fgets($archivo).$espacio;
+    $archivo = fopen("archivo.txt", "r");
+    while (!feof($archivo)) {
+        echo fgets($archivo) . $espacio;
     }
 
     fclose($archivo);
+
+
+    session_start();
+
+    print_r($_SESSION);
+    $_SESSION["nombre"] = "Karol Leal";
+    $_SESSION["rol"] = "admin";
+    $_SESSION["username"] = "kleal";
+    //session_destroy();
     ?>
 </body>
 
