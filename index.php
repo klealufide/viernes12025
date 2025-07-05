@@ -8,6 +8,8 @@
 <body>
     <h1>Unidad 4</h1>
     <?php
+    $espacio = "<br>";
+    /*
     echo "<h2>Hola semana 6!</h2>";
 
     $nombre = "Karol Leal";
@@ -15,7 +17,7 @@
     $edad2 = "10";
     $altura = 1.58;
     $esEstudiante = false;
-    $espacio = "<br>";
+ 
     echo $edad + $edad2 . $espacio;
 
 
@@ -112,6 +114,72 @@
     if($a !== $b){
          echo "a y b son diferentes en valor o en tipo <br>";
     }
+
+    $contador = 0;
+
+    while($contador < 5){
+        $contador++;
+        echo $contador.$espacio;
+    }
+
+    do {
+        $contador++;
+        echo $contador.$espacio;
+    } while($contador < 5);
+
+    for($i = 0; $i <=10; $i++){
+        echo $i.$espacio;
+    }
+
+    */
+    // Indexado
+    $listaFrutas = ["melon", "pera", "banano"];
+
+    print_r($listaFrutas);
+    echo $espacio;
+    $listaFrutas = array("melon", "pera", "banano");
+    print_r($listaFrutas);
+    echo $espacio;
+
+
+    echo $listaFrutas[5];
+    echo $espacio;
+    //Asociativo
+
+
+    $persona = ["nombre" => "Karol", "edad" => 35, "altura" => 1.60, "esEstudiante" => false];
+    $persona2 = ["nombre" => "Maria", "edad" => 20, "altura" => 1.50, "esEstudiante" => true];
+    $persona3 = ["nombre" => "Rodrigo", "edad" => 23, "altura" => 1.80, "esEstudiante" => true];
+    $persona4 = ["nombre" => "Pablo", "edad" => 29, "altura" => 1.75, "esEstudiante" => true];
+    print_r($persona);
+    echo $espacio;
+    foreach ($listaFrutas as $posicion => $fruta) {
+        if ($posicion == 0) {
+            echo $posicion . ": " . $fruta . $espacio;
+        }
+        echo $espacio;
+        if ($fruta == "banano") {
+            echo "Posicion de banano es " . $posicion;
+            echo $espacio;
+        }
+    }
+
+    echo "La posicion segun la funcion integrada de banano es: " . array_search("banano", $listaFrutas);
+    echo $espacio;
+    $listaPersonas  = [$persona, $persona2, $persona3];
+
+    print_r($listaPersonas);
+    echo $espacio;
+    echo $listaPersonas[2]["nombre"];
+    array_push($persona4, "manzana");
+    array_push($listaPersonas, $persona4);
+    print_r($listaPersonas);
+    foreach ($listaPersonas as $index => $persona) {
+        if ($persona["esEstudiante"]) {
+            echo $index . ": " . $persona["nombre"] . $espacio;
+        }
+    }
+
 
 
     ?>
