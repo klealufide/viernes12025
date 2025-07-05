@@ -181,7 +181,35 @@
     }
 
 
+    function calculadora($a, $b, $operador)
+    {
+        switch ($operador) {
+            case '+':
+                return $a + $b;
+            case '-':
+                return $a - $b;
+            case '*':
+                return $a * $b;
+            case '/':
+                if ($b == 0) {
+                    return "Error: Division entre cero.";
+                }
+                return $a / $b;
+            default:
+                return "Operador no valido.";
+        }
+    }
 
+
+    echo calculadora(10, 5, '+');
+    echo $espacio;
+    echo calculadora(10, 5, '-');
+    echo $espacio;
+    echo calculadora(10, 5, '*');
+    echo $espacio;
+    echo calculadora(10, 5, '/');
+
+    echo $espacio;
     ?>
 </body>
 
