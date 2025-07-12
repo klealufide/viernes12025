@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $servername = "localhost";
 $username = "root";
@@ -7,11 +7,9 @@ $database = "biblioteca";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
-if($conn->connect_error){
+if ($conn->connect_error) {
     die($conn->connect_error);
-} else {
-    echo "La conexion OKAY";
-}
+} 
 
 /*
 $sql = "INSERT INTO  usuarios (usuario, clave, nombre, rol) VALUES ('trojas','123456','Tatiana','encargado')";
@@ -22,6 +20,7 @@ if($conn->query($sql)){
     echo "error al agregar el registro<br>";
 }
 */
+/*
 $sql = "SELECT * from usuarios";
 $result = $conn->query($sql);
 
@@ -50,3 +49,19 @@ if($conn->query($sql)){
 } else {
     echo "error al eliminar el registro<br>";
 }
+    
+echo "<br>";
+
+$clave = "123Queso";
+
+//$hash = password_hash($clave, PASSWORD_BCRYPT);
+
+$hash_basedatos = '$2y$10$nhZYkJ14lgJmcD0W9tru7eTXjBxKJ4X9gsH8vgpJ0A11zRvXSFOVO';
+
+if(password_verify($clave, $hash_basedatos)){
+    echo "clave valida";
+} else {
+    echo "clave incorrecta";
+}
+
+*/
