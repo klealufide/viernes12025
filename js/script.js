@@ -17,8 +17,23 @@ $(function () {
     let multi = $("#titulo, .grupo2, li");
     console.log(multi);
 
+    $("a").attr("href","https://youtube.com")
+
     $("#saludar").on("click", function(){
         //text() html()
         $("#titulo").text("Semana 10 - Unidad 6");
+        $("#titulo").css("color","red");
+        $(".grupo1").addClass("grupo3");
+        $(".grupo1").removeClass("grupo1");
+    });
+
+    $("#btnAgregar").on("click", function(){
+        let tarea = $("#tarea");
+       // tarea.val("nuevo texto");
+        if(tarea.val() == ""){
+            tarea.css("borderColor","red");
+        } else {
+            tarea.css("borderColor", "black");
+        }
     })
 })
