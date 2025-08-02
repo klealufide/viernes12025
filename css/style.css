@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    color: #ff6f61;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+main {
+    padding: 15px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.agregar {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#register-form,
+#login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#register-form,
+#login-form input[type="text"],
+#register-form,
+#login-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+#register-form,
+#login-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#register-form,
+#login-form button:hover {
+    background-color: #0056b3;
+}
+
+
+#registerResult,
+#login-form {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+
+form#menuForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+form#menuForm input[type="text"],
+form#menuForm input[type="number"],
+form#menuForm input[type="url"],
+form#menuForm input[type="hidden"] {
+    flex: 1 1 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form#menuForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form#menuForm button:hover {
+    background-color: #0056b3;
+}
+
+form#menuForm button#cancelEdit {
+    background-color: #6c757d;
+}
+
+form#menuForm button#cancelEdit:hover {
+    background-color: #5a6268;
+}
+
+#menuResult {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+table#menuTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table#menuTable th,
+table#menuTable td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+table#menuTable th {
+    background-color: #007bff;
+    color: white;
+    font-weight: normal;
+}
+
+table#menuTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+table#menuTable img {
+    border-radius: 5px;
+}
+
+table#menuTable button {
+    margin-right: 8px;
+    padding: 5px 10px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table#menuTable button:hover {
+    opacity: 0.8;
+}
+
+table#menuTable button:first-child {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+table#menuTable button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
